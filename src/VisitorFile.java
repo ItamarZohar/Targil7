@@ -7,4 +7,5 @@ public interface VisitorFile {
     void visit(PptxFileDetails a);
     void visit(HtmlFileDetails a);
     void visit(JpgFileDetails a);
+    void visit(DirectoryDetails directoryDetails);
 }

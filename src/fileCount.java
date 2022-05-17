@@ -15,4 +15,9 @@ public class fileCount implements VisitorFile{
     @Override
     public void visit(JpgFileDetails a){count++;}
 
+    @Override
+    public void visit(DirectoryDetails directoryDetails) {
+
+    }
+
 }

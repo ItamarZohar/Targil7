@@ -20,5 +20,6 @@ public class DirectoryDetails extends FileDetails {
         {
           i.accept(a);
         }
+        a.visit(this);
     }
 }
