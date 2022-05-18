@@ -79,7 +79,7 @@ public class Main {
 
         HamburgerFactory hamburgerFactory = new HamburgerFactory();
 
-        Hamburger hamburger = hamburgerFactory.createHamburger(scanner.nextLine());//choice hamburger by the user
+        Hamburger hamburger = HamburgerFactory.createHamburger(scanner.nextLine());//choice hamburger by the user
 
         String choice="";
         while (!choice.equals("s")) {
@@ -88,7 +88,7 @@ public class Main {
                     "s: serve");
             choice = scanner.nextLine();
             if (choice.equals("a")) {
-                hamburger = toppingMenu(scanner, hamburger);
+                hamburger = MenuTopping(scanner, hamburger);
             }
             if (choice.equals("s")) {
                 System.out.println(hamburger.serve());
@@ -96,14 +96,14 @@ public class Main {
             }
         }
     }
-    public static Hamburger toppingMenu(Scanner scanner, Hamburger hamburger){
+    public static Hamburger MenuTopping(Scanner scanner, Hamburger hamburger){
         System.out.println("Choose from the following toppings:\n" +
                 "ch: chips\n" +
                 "or: onion rings\n" +
                 "sa: salad\n" +
                 "fe: fried egg");
 
-        HamburgerToppingFactory hamburgerToppingFactory = new HamburgerToppingFactory();
-        return hamburgerToppingFactory.GetTopping(scanner.nextLine(),hamburger);
+        HamburgerToppingFactory toppingFactory = new HamburgerToppingFactory();
+        return toppingFactory.GetTopping(scanner.nextLine(),hamburger);
     }
 }
