@@ -103,7 +103,7 @@ public class Main {
                 "sa: salad\n" +
                 "fe: fried egg");
 
-        HamburgerToppingFactory toppingFactory = new HamburgerToppingFactory();
+        ToppingFactory toppingFactory = new ToppingFactory();
         return toppingFactory.GetTopping(scanner.nextLine(),hamburger);
     }
 }

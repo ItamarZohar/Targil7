@@ -55,7 +55,7 @@ public class statistics implements VisitorFile{
 
 
         System.out.println("The picture " + a.getName() + " has an average of " +
-            ev  + " bits per pixel.");}
+            ev  + " bytesh per pixel.");}
     @Override //For a folder - consider the number of files in it - including a deep search. That is, we go into all the levels of recruiting and recalculate the number of files that appear there.
     public void visit(DirectoryDetails a) {    int myCount = 0;
         System.out.println("Directory " + a.getName() +
