@@ -1,5 +1,5 @@
 public class ToppingFactory {
-    public Hamburger GetTopping(String toppingType, Hamburger hamburger) {
+    public TheDec GetTopping(String toppingType, Hamburger hamburger) {
         if (toppingType == null) {
             return null;
         }
